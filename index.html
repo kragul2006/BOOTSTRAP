@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gather — A community event portal where moments become memories." />
+  <title>Gather — Community Events</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Fonts: Fraunces (editorial serif) + Plus Jakarta Sans (humanist sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <a class="navbar-brand" href="#home">
+        <span class="brand-dot"></span>gather
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="tog-line"></span>
+        <span class="tog-line"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stories">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <form class="d-flex ms-lg-4 mt-3 mt-lg-0 search-form" role="search" onsubmit="return false;">
+          <input class="form-control search-input" type="search" placeholder="Search events…" aria-label="Search" />
+          <button class="btn btn-search ms-2" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="home" class="hero-wrap">
+
+    <!-- Decorative blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="blob blob-3" aria-hidden="true"></div>
+
+    <div class="container-fluid px-4 px-lg-5 hero-inner">
+      <div class="row align-items-end g-0 hero-row">
+
+        <!-- Left: editorial text block -->
+        <div class="col-lg-7 hero-text-col">
+          <p class="hero-kicker reveal-up">Community Events 2025</p>
+          <h1 class="hero-headline reveal-up" style="animation-delay:.12s">
+            Where people<br/>
+            <em>find their</em><br/>
+            <span class="headline-accent">people.</span>
+          </h1>
+          <p class="hero-body reveal-up" style="animation-delay:.24s">
+            Workshops, concerts, food festivals, art shows & more — curated for curious minds and open hearts across 48 cities.
+          </p>
+          <div class="hero-ctas reveal-up d-flex flex-column flex-sm-row gap-3" style="animation-delay:.36s">
+            <a href="#events" class="btn btn-primary-custom">Browse events <i class="bi bi-arrow-right ms-2"></i></a>
+            <a href="#register" class="btn btn-ghost-custom">Join the community</a>
+          </div>
+
+          <!-- Stat strip -->
+          <div class="stat-strip reveal-up d-flex flex-wrap gap-4 mt-5" style="animation-delay:.48s">
+            <div class="stat-item">
+              <span class="stat-num">500<sup>+</sup></span>
+              <span class="stat-label">events hosted</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-num">8k</span>
+              <span class="stat-label">Members</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-num">21</span>
+              <span class="stat-label">cities</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-num">98<sup>%</sup></span>
+              <span class="stat-label">satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: stacked event previews -->
+        <div class="col-lg-5 hero-cards-col reveal-right" style="animation-delay:.3s">
+          <div class="hero-card-stack">
+            <div class="hc hc-back">
+              <div class="hc-inner hc-music">
+                <i class="bi bi-music-note-beamed hc-icon"></i>
+                <span class="hc-tag">Music</span>
+                <p class="hc-title">Summer Beats Festival</p>
+              </div>
+            </div>
+            <div class="hc hc-mid">
+              <div class="hc-inner hc-food">
+                <i class="bi bi-egg-fried hc-icon"></i>
+                <span class="hc-tag">Food</span>
+                <p class="hc-title">International Food Fest</p>
+              </div>
+            </div>
+            <div class="hc hc-front">
+              <div class="hc-inner hc-tech">
+                <i class="bi bi-cpu hc-icon"></i>
+                <span class="hc-tag">Tech</span>
+                <p class="hc-title">DevSummit 2025 — AI & Beyond</p>
+                <div class="hc-meta">
+                  <i class="bi bi-calendar3"></i> Aug 5–6, 2025 &nbsp;·&nbsp;
+                  <i class="bi bi-geo-alt"></i> San Francisco
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue" aria-label="Scroll down">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CATEGORY RIBBON
+  ══════════════════════════════════════════ -->
+  <div class="cat-ribbon">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="d-flex flex-wrap gap-2 py-3">
+        <button class="cat-pill active" data-cat="all">All events</button>
+        <button class="cat-pill" data-cat="music"><i class="bi bi-music-note me-1"></i>Music</button>
+        <button class="cat-pill" data-cat="tech"><i class="bi bi-cpu me-1"></i>Technology</button>
+        <button class="cat-pill" data-cat="food"><i class="bi bi-egg-fried me-1"></i>Food &amp; Culture</button>
+        <button class="cat-pill" data-cat="arts"><i class="bi bi-palette me-1"></i>Arts</button>
+        <button class="cat-pill" data-cat="wellness"><i class="bi bi-heart-pulse me-1"></i>Wellness</button>
+        <button class="cat-pill" data-cat="lit"><i class="bi bi-book me-1"></i>Literature</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       EVENTS GRID
+  ══════════════════════════════════════════ -->
+  <section id="events" class="events-section">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-intro mb-5">
+        <p class="section-eyebrow">Upcoming</p>
+        <h2 class="section-title">Featured Events</h2>
+        <p class="section-sub">Hand-picked experiences for every kind of curious person.</p>
+      </div>
+
+      <div class="row g-4 events-grid">
+
+        <!-- Card 1 — wide feature card -->
+        <div class="col-lg-8 col-12" data-cat="music">
+          <article class="ecard ecard-feature reveal-card">
+            <div class="ecard-visual ecard-vis-music" aria-hidden="true">
+              <i class="bi bi-music-note-beamed ecard-bg-icon"></i>
+              <div class="ecard-vis-overlay"></div>
+            </div>
+            <div class="ecard-body">
+              <div class="ecard-top">
+                <span class="ecard-cat-badge cat-music">🎵 Music</span>
+                <span class="ecard-hot"><i class="bi bi-fire"></i> 12 left</span>
+              </div>
+              <h3 class="ecard-title">Summer Beats Music Festival</h3>
+              <p class="ecard-desc">Three days of live performances from 40+ artists across 5 stages. Food trucks, art, and a dedicated kids' zone under open skies.</p>
+              <ul class="ecard-meta-list">
+                <li><i class="bi bi-calendar3"></i> July 18–20, 2025</li>
+                <li><i class="bi bi-geo-alt"></i> Riverrun,Westeros</li>
+                <li><i class="bi bi-people"></i> 3,000+ expected</li>
+              </ul>
+              <div class="ecard-foot">
+                <span class="ecard-price">$45 – $120</span>
+                <button class="btn btn-ecard" data-bs-toggle="modal" data-bs-target="#successModal">Register <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6" data-cat="tech">
+          <article class="ecard reveal-card" style="animation-delay:.1s">
+            <div class="ecard-visual ecard-vis-tech" aria-hidden="true">
+              <i class="bi bi-cpu ecard-bg-icon"></i>
+              <div class="ecard-vis-overlay"></div>
+            </div>
+            <div class="ecard-body">
+              <div class="ecard-top">
+                <span class="ecard-cat-badge cat-tech">💻 Tech</span>
+                <span class="ecard-hot"><i class="bi bi-fire"></i> 5 left</span>
+              </div>
+              <h3 class="ecard-title">DevSummit 2025 — AI & Beyond</h3>
+              <p class="ecard-desc">Keynotes, workshops, and networking with industry leaders in AI, Web3, and cloud.</p>
+              <ul class="ecard-meta-list">
+                <li><i class="bi bi-calendar3"></i> Aug 5–6, 2025</li>
+                <li><i class="bi bi-geo-alt"></i> Tech Hub, San Francisco</li>
+              </ul>
+              <div class="ecard-foot">
+                <span class="ecard-price">$80 – $250</span>
+                <button class="btn btn-ecard" data-bs-toggle="modal" data-bs-target="#successModal">Register <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6" data-cat="food">
+          <article class="ecard reveal-card" style="animation-delay:.15s">
+            <div class="ecard-visual ecard-vis-food" aria-hidden="true">
+              <i class="bi bi-egg-fried ecard-bg-icon"></i>
+              <div class="ecard-vis-overlay"></div>
+            </div>
+            <div class="ecard-body">
+              <div class="ecard-top">
+                <span class="ecard-cat-badge cat-food">🍜 Food</span>
+              </div>
+              <h3 class="ecard-title">International Food & Culture Fest</h3>
+              <p class="ecard-desc">Cuisines from 30+ countries, cooking demos, and cultural performances at Millennium Park.</p>
+              <ul class="ecard-meta-list">
+                <li><i class="bi bi-calendar3"></i> Sept 12–14, 2025</li>
+                <li><i class="bi bi-geo-alt"></i> Million Park, Chicago</li>
+              </ul>
+              <div class="ecard-foot">
+                <span class="ecard-price">Free </span>
+                <button class="btn btn-ecard" data-bs-toggle="modal" data-bs-target="#successModal">Register <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6" data-cat="arts">
+          <article class="ecard reveal-card" style="animation-delay:.2s">
+            <div class="ecard-visual ecard-vis-arts" aria-hidden="true">
+              <i class="bi bi-palette ecard-bg-icon"></i>
+              <div class="ecard-vis-overlay"></div>
+            </div>
+            <div class="ecard-body">
+              <div class="ecard-top">
+                <span class="ecard-cat-badge cat-arts">🎨 Arts</span>
+              </div>
+              <h3 class="ecard-title">Urban Art & Design Expo</h3>
+              <p class="ecard-desc">Emerging and established visual artists, interactive murals, and digital installations.</p>
+              <ul class="ecard-meta-list">
+                <li><i class="bi bi-calendar3"></i> Oct 3–5, 2025</li>
+                <li><i class="bi bi-geo-alt"></i> Brooklyn Warehouse, NY</li>
+              </ul>
+              <div class="ecard-foot">
+                <span class="ecard-price">$20 – $60</span>
+                <button class="btn btn-ecard" data-bs-toggle="modal" data-bs-target="#successModal">Register <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6" data-cat="wellness">
+          <article class="ecard reveal-card" style="animation-delay:.25s">
+            <div class="ecard-visual ecard-vis-wellness" aria-hidden="true">
+              <i class="bi bi-heart-pulse ecard-bg-icon"></i>
+              <div class="ecard-vis-overlay"></div>
+            </div>
+            <div class="ecard-body">
+              <div class="ecard-top">
+                <span class="ecard-cat-badge cat-wellness">🧘 Wellness</span>
+              </div>
+              <h3 class="ecard-title">Mindful Living Wellness Retreat</h3>
+              <p class="ecard-desc">Yoga, meditation, nutrition talks, and holistic therapy demos to recharge body and mind.</p>
+              <ul class="ecard-meta-list">
+                <li><i class="bi bi-calendar3"></i> Nov 1–2, 2025</li>
+                <li><i class="bi bi-geo-alt"></i> Serenity Grounds, Portland</li>
+              </ul>
+              <div class="ecard-foot">
+                <span class="ecard-price">$95 – $180</span>
+                <button class="btn btn-ecard" data-bs-toggle="modal" data-bs-target="#successModal">Register <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6" data-cat="lit">
+          <article class="ecard reveal-card" style="animation-delay:.3s">
+            <div class="ecard-visual ecard-vis-lit" aria-hidden="true">
+              <i class="bi bi-book ecard-bg-icon"></i>
+              <div class="ecard-vis-overlay"></div>
+            </div>
+            <div class="ecard-body">
+              <div class="ecard-top">
+                <span class="ecard-cat-badge cat-lit">📚 Lit</span>
+              </div>
+              <h3 class="ecard-title">The Writers' Circle Book Festival</h3>
+              <p class="ecard-desc">Author readings, panel discussions, and a book market with 100+ indie publishers.</p>
+              <ul class="ecard-meta-list">
+                <li><i class="bi bi-calendar3"></i> Dec 6–7, 2025</li>
+                <li><i class="bi bi-geo-alt"></i> Grand Library Hall, Boston</li>
+              </ul>
+              <div class="ecard-foot">
+                <span class="ecard-price">Free – $25</span>
+                <button class="btn btn-ecard" data-bs-toggle="modal" data-bs-target="#successModal">Register <i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /events-grid -->
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SIDEBAR + TABS SECTION
+  ══════════════════════════════════════════ -->
+  <section class="sidebar-zone py-5">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-5">
+
+        <!-- Sidebar -->
+        <aside class="col-xl-3 col-lg-4 order-lg-1">
+
+          <!-- Filter Widget -->
+          <div class="widget widget-filter reveal-card">
+            <div class="widget-header">
+              <i class="bi bi-sliders2"></i> Filter Events
+            </div>
+            <div class="widget-body">
+              <label class="wlabel">Category</label>
+              <select class="form-select wselect">
+                <option>All Categories</option>
+                <option>Music</option>
+                <option>Technology</option>
+                <option>Food &amp; Culture</option>
+                <option>Arts</option>
+                <option>Wellness</option>
+                <option>Literature</option>
+              </select>
+
+              <label class="wlabel mt-3">Date</label>
+              <input type="date" class="form-control wcontrol" />
+
+              <label class="wlabel mt-3">Max Price: <span id="priceVal">$150</span></label>
+              <input type="range" class="form-range wrange" min="0" max="300" value="150" id="priceRange" />
+
+              <button class="btn btn-filter-apply w-100 mt-3">Apply Filters</button>
+            </div>
+          </div>
+
+          <!-- Tags -->
+          <div class="widget mt-4 reveal-card" style="animation-delay:.1s">
+            <div class="widget-header"><i class="bi bi-tags"></i> Popular Tags</div>
+            <div class="widget-body d-flex flex-wrap gap-2">
+              <span class="wtag">#Music</span>
+              <span class="wtag">#Tech</span>
+              <span class="wtag">#Food</span>
+              <span class="wtag">#Art</span>
+              <span class="wtag">#Wellness</span>
+              <span class="wtag">#Books</span>
+              <span class="wtag">#Community</span>
+              <span class="wtag">#Outdoor</span>
+            </div>
+          </div>
+
+          <!-- Organizer Card -->
+          <div class="widget widget-organizer mt-4 text-center reveal-card" style="animation-delay:.2s">
+            <div class="org-avatar">
+              <img src="https://ui-avatars.com/api/?name=Jordan+Lee&background=c4553a&color=fff&size=80&rounded=true&bold=true" alt="Jordan Lee" width="72" height="72" />
+            </div>
+            <h6 class="org-name">RAGUL K</h6>
+            <p class="org-role">Head Organiser</p>
+            <p class="org-bio">Passionate about building local communities through meaningful shared experiences.</p>
+            <div class="d-flex justify-content-center gap-3 org-socials">
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main content with tabs -->
+        <main class="col-xl-9 col-lg-8 order-lg-2">
+          <ul class="nav nav-tabs custom-tabs mb-4" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab-upcoming" data-bs-toggle="tab" data-bs-target="#pane-upcoming" type="button" role="tab">
+                <i class="bi bi-calendar-check me-1"></i>Upcoming
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-featured" data-bs-toggle="tab" data-bs-target="#pane-featured" type="button" role="tab">
+                <i class="bi bi-star me-1"></i>Featured
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-past" data-bs-toggle="tab" data-bs-target="#pane-past" type="button" role="tab">
+                <i class="bi bi-clock-history me-1"></i>Past Events
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="mainTabContent">
+            <!-- Upcoming Tab -->
+            <div class="tab-pane fade show active" id="pane-upcoming" role="tabpanel">
+              <div class="event-list">
+
+                <div class="elist-item">
+                  <div class="elist-dot dot-music"></div>
+                  <div class="elist-content">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                      <div>
+                        <span class="elist-badge badge-music">Music</span>
+                        <strong class="elist-name">Summer Beats Music Festival</strong>
+                      </div>
+                      <button class="btn btn-expand" data-bs-toggle="collapse" data-bs-target="#det1" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i> Details
+                      </button>
+                    </div>
+                    <div class="collapse mt-3" id="det1">
+                      <div class="elist-detail">
+                        <p><i class="bi bi-clock me-1"></i> Gates open 2 PM daily. All ages welcome.</p>
+                        <p><i class="bi bi-map me-1"></i> Parking on-site. Public transit encouraged.</p>
+                        <p class="mb-0"><i class="bi bi-info-circle me-1"></i> No outside food or beverages. ADA accessible.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="elist-item">
+                  <div class="elist-dot dot-tech"></div>
+                  <div class="elist-content">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                      <div>
+                        <span class="elist-badge badge-tech">Tech</span>
+                        <strong class="elist-name">DevSummit 2025 — AI & Beyond</strong>
+                      </div>
+                      <button class="btn btn-expand" data-bs-toggle="collapse" data-bs-target="#det2" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i> Details
+                      </button>
+                    </div>
+                    <div class="collapse mt-3" id="det2">
+                      <div class="elist-detail">
+                        <p><i class="bi bi-clock me-1"></i> Registration 8 AM. Keynote at 9 AM sharp.</p>
+                        <p><i class="bi bi-wifi me-1"></i> High-speed WiFi throughout venue.</p>
+                        <p class="mb-0"><i class="bi bi-cup-hot me-1"></i> Meals included in ticket price.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="elist-item">
+                  <div class="elist-dot dot-food"></div>
+                  <div class="elist-content">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+                      <div>
+                        <span class="elist-badge badge-food">Food</span>
+                        <strong class="elist-name">International Food & Culture Fest</strong>
+                      </div>
+                      <button class="btn btn-expand" data-bs-toggle="collapse" data-bs-target="#det3" aria-expanded="false">
+                        <i class="bi bi-chevron-down"></i> Details
+                      </button>
+                    </div>
+                    <div class="collapse mt-3" id="det3">
+                      <div class="elist-detail">
+                        <p><i class="bi bi-clock me-1"></i> Open 11 AM – 9 PM all three days.</p>
+                        <p><i class="bi bi-people me-1"></i> Family-friendly. Dedicated kids' zone.</p>
+                        <p class="mb-0"><i class="bi bi-cash-coin me-1"></i> Free entry. Food tokens at booths.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Featured Tab -->
+            <div class="tab-pane fade" id="pane-featured" role="tabpanel">
+              <div class="featured-alert mb-4">
+                <i class="bi bi-star-fill me-2"></i>
+                <strong>Editor's Pick:</strong> DevSummit 2025 is the season's most anticipated tech gathering. Secure your spot before early-bird pricing ends.
+              </div>
+              <ul class="nav nav-pills custom-pills gap-2 mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#p-all" type="button">All</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#p-free" type="button">Free</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#p-paid" type="button">Paid</button></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane show active" id="p-all"><p class="text-muted">Showing all featured events. Use filters to narrow your selection.</p></div>
+                <div class="tab-pane" id="p-free"><p class="text-muted">Free events include the International Food & Culture Fest and The Writers' Circle Book Festival (basic entry).</p></div>
+                <div class="tab-pane" id="p-paid"><p class="text-muted">Premium ticketed events with exclusive access, VIP lounges, and priority seating available.</p></div>
+              </div>
+            </div>
+
+            <!-- Past Tab -->
+            <div class="tab-pane fade" id="pane-past" role="tabpanel">
+              <p class="text-muted mb-4">Browse our archive of 250+ successfully hosted events.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="past-tag">Spring Jazz Fest 2024</span>
+                <span class="past-tag">WebDev Conf 2024</span>
+                <span class="past-tag">Harvest Food Fair 2024</span>
+                <span class="past-tag">Mural Arts Weekend 2024</span>
+                <span class="past-tag">Yoga in the Park 2024</span>
+                <span class="past-tag">Winter Lit Fest 2024</span>
+                <span class="past-tag">Startup Pitch Night 2024</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       WHY US — OFFSET LAYOUT
+  ══════════════════════════════════════════ -->
+  <section class="why-section">
+    <div class="why-bg-pattern" aria-hidden="true"></div>
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-intro mb-5">
+        <p class="section-eyebrow section-eyebrow-light">Why us</p>
+        <h2 class="section-title section-title-light">What we bring<br/>to the table.</h2>
+      </div>
+
+      <div class="d-flex flex-column flex-md-row gap-4 align-items-stretch">
+
+        <div class="why-card reveal-card">
+          <div class="why-num">01</div>
+          <i class="bi bi-shield-check why-icon"></i>
+          <h5 class="why-title">Verified Organisers</h5>
+          <p class="why-body">Every host is background-checked and community-vetted before they list a single event.</p>
+        </div>
+
+        <div class="why-card reveal-card" style="animation-delay:.1s">
+          <div class="why-num">02</div>
+          <i class="bi bi-ticket-perforated why-icon"></i>
+          <h5 class="why-title">Instant E-Tickets</h5>
+          <p class="why-body">Digital tickets arrive in your inbox within seconds of completing registration.</p>
+        </div>
+
+        <div class="why-card why-card-accent reveal-card" style="animation-delay:.2s">
+          <div class="why-num">03</div>
+          <i class="bi bi-people-fill why-icon"></i>
+          <h5 class="why-title">Community First</h5>
+          <p class="why-body">Built by locals for locals — 100% of proceeds support community programmes.</p>
+        </div>
+
+        <div class="why-card reveal-card" style="animation-delay:.3s">
+          <div class="why-num">04</div>
+          <i class="bi bi-headset why-icon"></i>
+          <h5 class="why-title">24/7 Support</h5>
+          <p class="why-body">Live chat, email, and phone support before, during, and after every event.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       GALLERY / CAROUSEL
+  ══════════════════════════════════════════ -->
+  <section id="stories" class="gallery-section">
+    <div class="container-fluid px-4 px-lg-5">
+
+      <div class="section-intro mb-5">
+        <p class="section-eyebrow">Memories</p>
+        <h2 class="section-title">Event Gallery</h2>
+        <p class="section-sub">Relive the moments — see what happens when community comes together.</p>
+      </div>
+
+      <div id="galleryCarousel" class="carousel slide carousel-fade gallery-carousel reveal-card" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="gslide gslide-music d-flex align-items-center justify-content-center">
+              <div class="gslide-content text-center">
+                <i class="bi bi-music-note-beamed gslide-icon"></i>
+                <h3 class="gslide-title">Summer Beats 2024</h3>
+                <p class="gslide-sub">Main Stage Night — 15,000 in attendance</p>
+              </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Summer Beats Music Festival</h5>
+              <p>Three unforgettable nights of music under the stars.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="gslide gslide-tech d-flex align-items-center justify-content-center">
+              <div class="gslide-content text-center">
+                <i class="bi bi-cpu gslide-icon"></i>
+                <h3 class="gslide-title">DevSummit 2024</h3>
+                <p class="gslide-sub">AI Workshop — Sold Out in 48 Hours</p>
+              </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>DevSummit 2024</h5>
+              <p>Packed keynote hall with 2,400 tech enthusiasts.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="gslide gslide-food d-flex align-items-center justify-content-center">
+              <div class="gslide-content text-center">
+                <i class="bi bi-egg-fried gslide-icon"></i>
+                <h3 class="gslide-title">Food Fest 2024</h3>
+                <p class="gslide-sub">32 Countries · 120 Vendors · 1 Weekend</p>
+              </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>International Food Fest 2024</h5>
+              <p>Flavours from 32 nations in one magnificent park.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="gslide gslide-arts d-flex align-items-center justify-content-center">
+              <div class="gslide-content text-center">
+                <i class="bi bi-palette gslide-icon"></i>
+                <h3 class="gslide-title">Urban Art Expo 2024</h3>
+                <p class="gslide-sub">90 Artists · 40 Live Murals · 3 Days</p>
+              </div>
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Urban Art Expo 2024</h5>
+              <p>Where creativity meets concrete and canvas.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <i class="bi bi-arrow-left" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       REGISTRATION FORM
+  ══════════════════════════════════════════ -->
+  <section id="register" class="register-section">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-10">
+
+          <div class="reg-card reveal-card">
+            <div class="reg-card-left">
+              <p class="reg-eyebrow">Join us</p>
+              <h2 class="reg-headline">Save your<br/><em>spot today.</em></h2>
+              <p class="reg-subtext">Fill in the form and we'll have your ticket to you in seconds.</p>
+              <ul class="reg-perks">
+                <li><i class="bi bi-check2-circle"></i> Instant digital ticket</li>
+                <li><i class="bi bi-check2-circle"></i> Free cancellation policy</li>
+                <li><i class="bi bi-check2-circle"></i> Priority entry access</li>
+                <li><i class="bi bi-check2-circle"></i> Event reminders via SMS</li>
+              </ul>
+            </div>
+
+            <div class="reg-card-right">
+              <form id="registrationForm" novalidate>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control rf-control" id="fullName" placeholder="Full Name" required minlength="3" />
+                      <label for="fullName">Full Name</label>
+                      <div class="invalid-feedback">Please enter your full name (min. 3 characters).</div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control rf-control" id="emailAddress" placeholder="Email" required />
+                      <label for="emailAddress">Email Address</label>
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-3">
+                  <div class="input-group has-validation">
+                    <span class="input-group-text rf-prefix"><i class="bi bi-telephone-fill"></i></span>
+                    <input type="tel" class="form-control rf-control" id="phoneNumber" placeholder="Phone Number" required pattern="[\+]?[0-9\s\-]{7,15}" />
+                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                  </div>
+                </div>
+
+                <div class="form-floating mt-3">
+                  <select class="form-select rf-control" id="eventCategory" required>
+                    <option value="" selected disabled>Choose a category</option>
+                    <option value="music">🎵 Music &amp; Concerts</option>
+                    <option value="tech">💻 Technology</option>
+                    <option value="food">🍜 Food &amp; Culture</option>
+                    <option value="art">🎨 Arts &amp; Design</option>
+                    <option value="wellness">🧘 Wellness</option>
+                    <option value="literature">📚 Literature</option>
+                    <option value="sports">⚽ Sports</option>
+                  </select>
+                  <label for="eventCategory">Event Category</label>
+                  <div class="invalid-feedback">Please select a category.</div>
+                </div>
+
+                <div class="form-floating mt-3">
+                  <textarea class="form-control rf-control" id="messageText" placeholder="Message" style="height:110px;"></textarea>
+                  <label for="messageText">Message (optional)</label>
+                </div>
+
+                <div class="mt-4">
+                  <div class="form-check rf-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="emailUpdates" />
+                    <label class="form-check-label" for="emailUpdates">Send me event updates &amp; newsletters</label>
+                  </div>
+                  <div class="form-check rf-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="smsAlerts" />
+                    <label class="form-check-label" for="smsAlerts">Send SMS reminders</label>
+                  </div>
+                  <div class="form-check rf-check">
+                    <input class="form-check-input" type="checkbox" id="agreeTerms" required />
+                    <label class="form-check-label" for="agreeTerms">
+                      I agree to the <a href="#" class="rf-link">Terms</a> and <a href="#" class="rf-link">Privacy Policy</a>
+                    </label>
+                    <div class="invalid-feedback">You must agree before registering.</div>
+                  </div>
+                </div>
+
+                <div class="d-grid mt-4">
+                  <button type="submit" class="btn btn-register" id="submitBtn">
+                    Complete Registration <i class="bi bi-arrow-right ms-1"></i>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FAQ ACCORDION
+  ══════════════════════════════════════════ -->
+  <section class="faq-section py-5">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9">
+          <div class="section-intro mb-5 text-center">
+            <p class="section-eyebrow">Support</p>
+            <h2 class="section-title">Got questions?</h2>
+            <p class="section-sub">Everything you need to know before attending an event.</p>
+          </div>
+
+          <div class="accordion faq-accordion" id="faqAccordion">
+
+            <div class="faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                  How do I register for an event?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Find an event, click "Register", fill the form, and complete payment if applicable. A confirmation email with your digital ticket arrives instantly.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                  Can I get a refund if I can't attend?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Refund policies vary by organiser. Most events offer full refunds up to 7 days before the event and partial refunds up to 48 hours before. Check the event's detail page.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+                  Are events family-friendly?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Many events are designed for all ages and include dedicated family zones. Each listing clearly shows age recommendations and any restrictions.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false">
+                  How do I become an event organiser?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Submit an organiser application through "Host an Event", complete verification, and you'll be able to list events within 5 business days.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false">
+                  Is there a mobile app?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body faq-body">
+                  Our mobile-optimised website works seamlessly on all devices. A dedicated iOS and Android app is currently in beta for Q3 2025 launch.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="contact-texture" aria-hidden="true"></div>
+    <div class="container-fluid px-4 px-lg-5 position-relative">
+      <div class="section-intro mb-5 text-center">
+        <p class="section-eyebrow section-eyebrow-light">Get in touch</p>
+        <h2 class="section-title section-title-light">Let's talk.</h2>
+        <p class="section-sub section-sub-light">Questions, partnerships, ideas — we're all ears.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="ccard reveal-card">
+            <div class="ccard-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <h6 class="ccard-title">Office</h6>
+            <p class="ccard-body">123 Community Ave, Suite 400<br/>Austin, TX 78701, USA</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ccard reveal-card" style="animation-delay:.1s">
+            <div class="ccard-icon"><i class="bi bi-telephone-fill"></i></div>
+            <h6 class="ccard-title">Phone</h6>
+            <p class="ccard-body">+91 9828908221<br/>Mon–Fri, 9 AM – 6 PM IST</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ccard reveal-card" style="animation-delay:.2s">
+            <div class="ccard-icon"><i class="bi bi-envelope-fill"></i></div>
+            <h6 class="ccard-title">Email</h6>
+            <p class="ccard-body">gathercommunity@gmail.com<br/>support@gather.community</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       NEWSLETTER STRIP
+  ══════════════════════════════════════════ -->
+  <section class="newsletter-strip">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-md-6">
+          <h3 class="nl-headline">Stay in the loop.</h3>
+          <p class="nl-sub">Get event alerts, early-bird deals, and community news — no spam, ever.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="input-group nl-group">
+            <input type="email" class="form-control nl-input" placeholder="your@email.com" />
+            <button class="btn btn-nl-sub" type="button">Subscribe <i class="bi bi-send-fill ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MODAL
+  ══════════════════════════════════════════ -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content success-modal">
+        <button type="button" class="btn-close success-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="success-gfx" aria-hidden="true"></div>
+        <div class="success-body text-center">
+          <div class="success-check"><i class="bi bi-check-lg"></i></div>
+          <h4 class="success-title">You're all set!</h4>
+          <p class="success-text">Your spot has been reserved. A confirmation email with your digital ticket is on its way.</p>
+          <div class="d-flex gap-2 justify-content-center flex-wrap mt-4">
+            <a href="#events" class="btn btn-success-action" data-bs-dismiss="modal">Browse more events</a>
+            <button class="btn btn-success-ghost" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <div class="success-share">
+          <span>Share the excitement:</span>
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container-fluid px-4 px-lg-5">
+      <div class="row g-5">
+
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand" href="#home"><span class="brand-dot brand-dot-sm"></span>gather</a>
+          <p class="footer-blurb">Connecting communities through meaningful events since 2018. Discover, experience, and celebrate together.</p>
+          <div class="footer-socials d-flex gap-3 mt-4">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-heading">Navigate</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#stories">Gallery</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h6 class="footer-heading">Categories</h6>
+          <ul class="footer-links">
+            <li><a href="#"><i class="bi bi-music-note me-1"></i>Music</a></li>
+            <li><a href="#"><i class="bi bi-cpu me-1"></i>Technology</a></li>
+            <li><a href="#"><i class="bi bi-egg-fried me-1"></i>Food &amp; Culture</a></li>
+            <li><a href="#"><i class="bi bi-palette me-1"></i>Arts &amp; Design</a></li>
+            <li><a href="#"><i class="bi bi-heart-pulse me-1"></i>Wellness</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="footer-heading">Newsletter</h6>
+          <p class="footer-nl-sub">Latest events delivered weekly.</p>
+          <div class="input-group footer-nl-group">
+            <input type="email" class="form-control footer-nl-input" placeholder="your@email.com" />
+            <button class="btn btn-footer-sub"><i class="bi bi-send-fill"></i></button>
+          </div>
+          <p class="footer-privacy d-none d-md-block"><i class="bi bi-lock me-1"></i>We respect your privacy.</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Gather Community Events. All rights reserved.</span>
+        <div class="d-flex gap-4">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="btn-btt" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmr1JSwBF+rQOF6EVX1JBQakC7B" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
