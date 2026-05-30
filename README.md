@@ -118,10 +118,6 @@ Back-to-top button behavior
 🚀 Quick Start Structure
 To run this project locally:
 
-bash
-# Clone or download
-git clone https://github.com/your-username/gather-event-portal.git
-
 # Navigate to project
 cd gather-event-portal
 
