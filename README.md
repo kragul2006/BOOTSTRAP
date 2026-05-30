@@ -39,3 +39,93 @@ A modern, responsive community event discovery platform where moments become mem
 ---
 
 ## 📁 Project Structure
+gather-event-portal/
+│
+├── index.html                 # Main landing page with all HTML structure
+│
+├── css/
+│   └── style.css             # Custom styles, animations & responsive design
+│
+├── js/
+│   └── script.js             # Interactive features: filters, validation, carousel
+│
+└── README.md                 # Project documentation
+
+
+
+📦 Dependencies (CDN)
+
+<!-- Bootstrap 5 CSS -->
+<!-- Bootstrap Icons -->
+<!-- Google Fonts (Fraunces + Plus Jakarta Sans) -->
+<!-- Bootstrap 5 JS Bundle -->
+
+
+🔍 Key Components by File
+index.html contains:
+Hero section with stat strip
+
+Category filter ribbon
+
+Events grid (6 featured cards)
+
+Sidebar with filter widget & organizer profile
+
+Tab panels (Upcoming/Featured/Past)
+
+Registration form with validation
+
+FAQ accordion
+
+Gallery carousel
+
+Newsletter sections
+
+Contact cards
+
+Footer
+
+css/style.css contains:
+CSS custom properties (color tokens)
+
+Keyframe animations (fadeSlideUp, blobMove, etc.)
+
+Component styles (cards, buttons, forms)
+
+Responsive breakpoints (mobile, tablet, desktop)
+
+Modal & toast styling
+
+Back-to-top button styles
+
+js/script.js contains:
+Category filter logic
+
+Form validation (real-time + submit)
+
+Scroll reveal animations
+
+Navbar scroll spy
+
+Newsletter subscription handlers
+
+Carousel auto-play controls
+
+Custom toast notification system
+
+Back-to-top button behavior
+
+🚀 Quick Start Structure
+To run this project locally:
+
+bash
+# Clone or download
+git clone https://github.com/your-username/gather-event-portal.git
+
+# Navigate to project
+cd gather-event-portal
+
+# Open in browser
+open index.html    # Mac
+start index.html   # Windows
+No build tools or server required — it's pure HTML/CSS/JS!
